@@ -1,4 +1,7 @@
 let song = document.querySelector('audio');
+let songduration = document.querySelector('.end');
+
+songduration.textContent = secForMin(Math.floor(song.duration));
 
 document.querySelector('.btnplay').addEventListener('click',playsong);
 document.querySelector('.btnpause').addEventListener('click',pausesong);
@@ -22,12 +25,12 @@ function updadebar(){
    bar.style.width = Math.floor((song.currentTime / song.duration) * 100) + '%'; 
 
    let timepassed = document.querySelector('.start');
-   timepassed.textContent = Math.floor(song.currentTime);
+   timepassed.textContent = secForMin(Math.floor(song.currentTime));
 }
 
 function secForMin(seconds){
-    let fieldSeconds = Math.floor(seconds / 60);         
-    let fieldMinutes = segundos % 60;
+    let fieldMinutes = Math.floor(seconds / 60);         
+    let fieldSeconds = seconds % 60;
 
     if(fieldSeconds < 10){
         fieldSeconds = '0' + fieldSeconds;
