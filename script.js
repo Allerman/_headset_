@@ -20,6 +20,10 @@ function pausesong(){
     document.querySelector('.btnpause').style.display = 'none';
     document.querySelector('.btnplay').style.display = 'block';
 }
+
+
+
+
 function updadebar(){
    let bar = document.querySelector('progress');
    bar.style.width = Math.floor((song.currentTime / song.duration) * 100) + '%'; 
