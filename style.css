@@ -55,7 +55,7 @@
 }
 progress{
     height: 6px;
-    width: 50%;
+    width: 0;
     background-color: #b61717;
     border: #b61717;
 }
