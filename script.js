@@ -1,5 +1,12 @@
 let song = document.querySelector('audio');
+let songs = [
+    {}
+];
+
 let songduration = document.querySelector('.end');
+let image = document.querySelector('img');
+let nameSong = document.querySelector('.description h2');
+let nameArtist = document.querySelector('.description i');
 
 songduration.textContent = secForMin(Math.floor(song.duration));
 
@@ -15,14 +22,12 @@ function playsong(){
     document.querySelector('.btnplay').style.display = 'none';
 
 }
+
 function pausesong(){
     song.pause();
     document.querySelector('.btnpause').style.display = 'none';
     document.querySelector('.btnplay').style.display = 'block';
 }
-
-
-
 
 function updadebar(){
    let bar = document.querySelector('progress');
