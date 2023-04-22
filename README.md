@@ -14,3 +14,5 @@
     CSS
     JavaScript
     
+# Developed by
+ > Allerman Thay.
