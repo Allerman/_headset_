@@ -1,6 +1,11 @@
 let song = document.querySelector('audio');
 let songs = [
-    {title:'c', artist:'mucalol', src:'', img:''}
+    {title:'Controllah', artist:'Gorillaz', src:'musics/Controllah.mp3', img:'imgs/gorillaz.jpg'},
+    {title:'Destá', artist:'Dorgival Dantas', src:'musics/Dorgival Dantas - Destá.mp3', img:'imgs/dorgival-dantas.jpeg'},
+    {title:'Eu Sou Feliz Assim', artist:'Ferrugem', src:'musics/Eu sou feliz assim.mp3', img:'imgs/soufelizassim-ferrugem.jpeg'},
+    {title:'KICK BACK', artist:'Kenshi Yonezu', src:'musics/KICK BACK .mp3', img:'imgs/kick-back.webp'},
+    {title:'PRIDE.', artist:'Kendrick Lamar', src:'musics/PRIDE.mp3', img:'imgs/Damn.-Kendrick_Lamar.jpg'},
+    {title:'Soldier Side - Intro', artist:'System of a Down', src:'musics/Soldier Side - Intro.mp3', img:'imgs/mezmerize-systemofdown.jpg'}
 ];
 
 let songduration = document.querySelector('.end');
