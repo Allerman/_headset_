@@ -13,7 +13,7 @@ let image = document.querySelector('img');
 let nameSong = document.querySelector('.description h2');
 let nameArtist = document.querySelector('.description i');
 
-songduration.textContent = secForMin(Math.floor(song.duration));
+songduration.textContent = secForMin(Math.floor((song.duration)));
 
 document.querySelector('.btnplay').addEventListener('click',playsong);
 document.querySelector('.btnpause').addEventListener('click',pausesong);
