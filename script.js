@@ -1,34 +1,38 @@
-let song = document.querySelector('audio');
 let songs = [
-    {title:'Controllah', artist:'Gorillaz', src:'./musics/Controllah.mp3', img:'./imgs/gorillaz.jpg'},
-    {title:'Destá', artist:'Dorgival Dantas', src:'./musics/Dorgival Dantas - Destá.mp3', img:'./imgs/dorgival-dantas.jpeg'},
-    {title:'Eu Sou Feliz Assim', artist:'Ferrugem', src:'./musics/Eu sou feliz assim.mp3', img:'./imgs/soufelizassim-ferrugem.jpeg'},
-    {title:'KICK BACK', artist:'Kenshi Yonezu', src:'./musics/KICK BACK .mp3', img:'./imgs/kick-back.webp'},
-    {title:'PRIDE.', artist:'Kendrick Lamar', src:'./musics/PRIDE.mp3', img:'./imgs/Damn.-Kendrick_Lamar.jpg'},
-    {title:'Soldier Side - Intro', artist:'System of a Down', src:'./musics/Soldier Side - Intro.mp3', img:'./imgs/mezmerize-systemofdown.jpg'}
+    {titulo:'Controllah', artist:'Gorillaz', src:'./musics/Controllah.mp3', image:'./imgs/gorillaz.jpg'},
+    {titulo:'Destá', artist:'Dorgival Dantas', src:'./musics/Dorgival Dantas - Destá.mp3', image:'./imgs/dorgival-dantas.jpeg'},
+    {titulo:'Eu Sou Feliz Assim', artist:'Ferrugem', src:'./musics/Eu sou feliz assim.mp3', image:'./imgs/soufelizassim-ferrugem.jpeg'},
+    {titulo:'KICK BACK', artist:'Kenshi Yonezu', src:'./musics/KICK BACK .mp3', image:'./imgs/kick-back.webp'},
+    {titulo:'PRIDE.', artist:'Kendrick Lamar', src:'./musics/PRIDE.mp3', image:'./imgs/Damn.-Kendrick_Lamar.jpg'},
+    {titulo:'Soldier Side - Intro', artist:'System of a Down', src:'./musics/Soldier Side - Intro.mp3', image:'./imgs/mezmerize-systemofdown.jpg'}
 ];
 
+let song = document.querySelector('audio');
+let indexSong = 0;
 let songduration = document.querySelector('.end');
 let image = document.querySelector('img');
 let nameSong = document.querySelector('.description h2');
 let nameArtist = document.querySelector('.description i');
 
+song.addEventListener('timeupdate',updadebar);
 songduration.textContent = secForMin(Math.floor((song.duration)));
 
 document.querySelector('.btnplay').addEventListener('click',playsong);
 document.querySelector('.btnpause').addEventListener('click',pausesong);
-document.querySelector('.btnseta').addEventListener('click',pausesong);
-
 document.querySelector('.btnsetaBack').addEventListener('click', () => {
     indexSong--;
+    if(indexSong <0){
+        indexSong = 5;
+    }
     renderSong(indexSong);
-})
+});
 document.querySelector('.btnsetaPass').addEventListener('click', () => {
     indexSong++;
+    if(indexSong >5){
+        indexSong = 0;
+    }
     renderSong(indexSong);
-})
-
-song.addEventListener('timeupdate',updadebar);
+});
 
 function playsong(){
     song.play();
@@ -42,12 +46,12 @@ function pausesong(){
     document.querySelector('.btnplay').style.display = 'block';
 }
 function renderSong(index){
-    
     song.setAttribute('src', songs[index].src);
+
     song.addEventListener('loadeddata', ()=> {
-        nameSong.textContent = songs[index].title;
+        nameSong.textContent = songs[index].titulo;
         nameArtist.textContent = songs[index].artist;
-        image.src = songs[index].img;
+        image.src = songs[index].image;
         songduration.textContent = secForMin(Math.floor((song.duration)));
     });
 }
@@ -56,8 +60,14 @@ function updadebar(){
    bar.style.width = Math.floor((song.currentTime / song.duration) * 100) + '%'; 
 
    let timepassed = document.querySelector('.start');
-   timepassed.textContent = secForMin(Math.floor(song.currentTime));
+   timepassed.textContent = secForMin(Math.floor((song.currentTime)));
 }
+
+
+
+
+
+
 
 function secForMin(seconds){
     let fieldMinutes = Math.floor(seconds / 60);
