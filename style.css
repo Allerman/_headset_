@@ -80,7 +80,11 @@ progress{
     align-items: center;
     margin-top: 40px;
 }
-.btnseta{
+.btnsetaBack{
+    cursor: pointer;
+    transform: scaleX(-1);
+}
+.btnsetaPass{
     cursor: pointer;
 }
 .btnplay{
