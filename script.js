@@ -53,6 +53,7 @@ function renderSong(index){
         nameArtist.textContent = songs[index].artist;
         image.src = songs[index].image;
         songduration.textContent = secForMin(Math.floor((song.duration)));
+        song.play();
     });
 }
 function updadebar(){
