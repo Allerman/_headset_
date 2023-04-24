@@ -1,6 +1,6 @@
 let song = document.querySelector('audio');
 let songs = [
-    {}
+    {title:'c', artist:'mucalol', src:'', img:''}
 ];
 
 let songduration = document.querySelector('.end');
@@ -38,7 +38,7 @@ function updadebar(){
 }
 
 function secForMin(seconds){
-    let fieldMinutes = Math.floor(seconds / 60);         
+    let fieldMinutes = Math.floor(seconds / 60);
     let fieldSeconds = seconds % 60;
 
     if(fieldSeconds < 10){
