@@ -17,7 +17,7 @@
     
 # How to use
 
-We will use **GitHubPages** to use the Task List, or you can `git clone` this repository and open it on its default port.
+We will use **GitHubPages** to use the Headset, or you can `git clone` this repository and open it on its default port.
 
 > [**Lista DeTarefas**](https://allerman.github.io/_headset_/)
     
