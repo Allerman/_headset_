@@ -19,7 +19,7 @@
 
 We will use **GitHubPages** to use the Headset, or you can `git clone` this repository and open it on its default port.
 
-> [**Lista DeTarefas**](https://allerman.github.io/_headset_/)
+> [**Headset 🎵**](https://allerman.github.io/_headset_/)
     
 When accessing, you will see a minimalist page with the three main buttons of play, pass and return to music.
 Feel free to explore and discover the songs that I have predefined in the playlist.
