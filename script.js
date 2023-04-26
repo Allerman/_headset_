@@ -17,6 +17,9 @@ let nameArtist = document.querySelector('.description i');
 song.addEventListener('timeupdate',updadebar);
 songduration.textContent = secForMin(Math.floor((song.duration)));
 
+song.addEventListener('loadeddata', duration);
+
+
 document.querySelector('.btnplay').addEventListener('click',playsong);
 document.querySelector('.btnpause').addEventListener('click',pausesong);
 document.querySelector('.btnsetaBack').addEventListener('click', () => {
@@ -34,6 +37,13 @@ document.querySelector('.btnsetaPass').addEventListener('click', () => {
     renderSong(indexSong);
 });
 
+function duration(){
+    let duractSong = document.querySelector('.end');
+
+
+    duractSong.textContent = secForMin(Math.floor(song.duration));
+
+}
 function playsong(){
     song.play();
     document.querySelector('.btnpause').style.display = 'block';
