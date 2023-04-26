@@ -28,28 +28,14 @@
     align-items: center;
     height: 600px;
 }
-.showList{
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    top: 7%;
-    right: 3%;
-}
-.showList:hover{
-    background: #ffffffa4;
-}
 
+/*itens da tag*/
 .tag img{
     width: 300px;
     height: 300px;
     border-radius: 10px;
     position: absolute;
 }
-
 .description{
     width: 300px;
     margin-top: 20px;
@@ -88,6 +74,22 @@ progress{
     width: 300px;
     justify-content: space-between;
     margin-top: 10px;
+}
+
+/* botoes dentro da tag*/
+.showList{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    top: 7%;
+    right: 3%;
+}
+.showList:hover{
+    background: #ffffffa4;
 }
 
 .btntools{
