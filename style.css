@@ -94,9 +94,9 @@ progress{
     top: 7%;
     right: 3%;
 }
-.showList:hover{
-    background: #ffffffa4;
-}
+.showList box-icon {
+    transform: scale(1.5);
+  }
 
 .btntools{
     width: 300px;
