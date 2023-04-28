@@ -1,5 +1,5 @@
 # Headset 🎵
-*_There will still be updates and concerts_*  💼 
+*_new function being developed_* 🏗️ 🚧 
 #### The project consists of a web audio player <br> The project was created with the aim of practicing the use of HTML markup language, styling with CSS and programming with JavaScript.
  ####
 
