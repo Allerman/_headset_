@@ -24,5 +24,7 @@ We will use **GitHubPages** to use the Headset, or you can `git clone` this repo
 When accessing, you will see a minimalist page with the three main buttons of play, pass and return to music.
 Feel free to explore and discover the songs that I have predefined in the playlist.
 
+*soon a new function will make it possible to visualize the songs in the form of a list*
+
 # Developed by
  > Allerman Thay.
