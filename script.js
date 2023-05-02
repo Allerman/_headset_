@@ -10,7 +10,7 @@ var btnShowList = document.getElementById("btnShowList");
 var Tag = document.getElementById("tag");
 var Playlist = document.getElementById("playlist");
 
-btnShowList.onclick = function() {
+btnShowList.onclick = function noneORblock() {
   if (Tag.style.display === "none") {
     Tag.style.display = "block";
     Playlist.style.display = "none";
