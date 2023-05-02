@@ -6,7 +6,9 @@
     font-family: 'Oswald', sans-serif;
     box-sizing: border-box;
 }
-
+#minhaDiv {
+    display: none;
+  }
 .conteiner{
     width: 100%;
     min-height: 100vh;
@@ -14,6 +16,21 @@
     padding: 10px;
 }
 /* cor dos botoes#b61717*/
+#playlist{
+    width: 90%;
+    max-width: 540px;
+    position: relative;
+    background: #272727dc;
+    margin: 100px auto 20px;
+    margin-top: 30px;
+    padding: 40px 30px 70px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+
 .tag{
     width: 90%;
     max-width: 540px;
@@ -27,6 +44,7 @@
     flex-direction: column;
     align-items: center;
     height: 600px;
+    display: none;
 }
 
 /*itens da tag*/
@@ -83,7 +101,7 @@ progress{
 }
 
 /* botoes dentro da tag*/
-.showList{
+.btnShowList{
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -94,7 +112,7 @@ progress{
     top: 7%;
     right: 3%;
 }
-.showList box-icon {
+.btnShowList box-icon {
     transform: scale(1.5);
   }
 
