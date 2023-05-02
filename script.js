@@ -8,14 +8,20 @@ let songs = [
 ];
 var btnShowList = document.getElementById("btnShowList");
 var Tag = document.getElementById("tag");
+var Playlist = document.getElementById("playlist");
 
 btnShowList.onclick = function() {
   if (Tag.style.display === "none") {
     Tag.style.display = "block";
-  } else {
+    Playlist.style.display = "none";
+  } 
+  else {
     Tag.style.display = "none";
+    Playlist.style.display = "block";
+
   }
 };
+
 let song = document.querySelector('audio');
 let indexSong = 0;
 let songduration = document.querySelector('.end');
