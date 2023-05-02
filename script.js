@@ -6,7 +6,16 @@ let songs = [
     {titulo:'PRIDE.', artist:'Kendrick Lamar', src:'./musics/PRIDE.mp3', image:'./imgs/Damn.-Kendrick_Lamar.jpg'},
     {titulo:'Soldier Side - Intro', artist:'System of a Down', src:'./musics/Soldier Side - Intro.mp3', image:'./imgs/mezmerize-systemofdown.jpg'}
 ];
+var btnShowList = document.getElementById("btnShowList");
+var Tag = document.getElementById("tag");
 
+btnShowList.onclick = function() {
+  if (Tag.style.display === "none") {
+    Tag.style.display = "block";
+  } else {
+    Tag.style.display = "none";
+  }
+};
 let song = document.querySelector('audio');
 let indexSong = 0;
 let songduration = document.querySelector('.end');
