@@ -16,32 +16,16 @@
     padding: 10px;
 }
 /* cor dos botoes#b61717*/
-#playlist{
-    width: 90%;
-    max-width: 540px;
-    position: relative;
-    background: #272727dc;
-    margin: 100px auto 20px;
-    margin-top: 30px;
-    padding: 40px 30px 70px;
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 600px;
-    display: block;
 
-}
-
-.tag{
+.tag,.playlist{
     width: 80%;
     height: 600px;
 
-    max-width: 420px;
+    max-width: 430px;
     position: relative;
     background: #272727dc;
     margin: 100px auto 20px;
-    margin-top: 30px;
+    margin-top: 50px;
     padding: 40px 30px 70px;
     border-radius: 40px;
     display: none;
@@ -115,7 +99,7 @@ progress{
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    top: 7%;
+    top: 3%;
     right: 3%;
 }
 .btnShowList box-icon {
