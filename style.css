@@ -6,9 +6,7 @@
     font-family: 'Oswald', sans-serif;
     box-sizing: border-box;
 }
-#minhaDiv {
-    display: none;
-  }
+
 .conteiner{
     width: 100%;
     min-height: 100vh;
@@ -28,6 +26,8 @@
     margin-top: 50px;
     padding: 40px 30px 70px;
     border-radius: 40px;
+    overflow: auto;
+
     display: none;
   }
   
@@ -38,18 +38,23 @@
   }
 /*itens da tag*/
 .tag img{
-    width: 300px;
+    width: 100%;
     height: 300px;
+
+    max-width: 300px;
     margin: 0;
     border-radius: 10px;
     position: absolute;
 }
-.description{
-    width: 300px;
-    margin-top: 20px;
-    font-size: 20px;
+
+.description {
+    width: 100%;
+    max-width: 300px;
+    font-size: 90%;
+    bottom: 33%;
+    word-wrap: break-word;
     position: absolute;
-    bottom: 31%;
+
 }
 
 .duration{
@@ -65,7 +70,7 @@
     align-items:center;
     justify-content: flex-start;
     position: absolute;
-    bottom: 26%;
+    bottom: 28%;
 }
 progress{
     height: 6px;
@@ -82,13 +87,13 @@ progress{
 }
 
 .timesong{
-    display: flex;
     width: 300px;
+    display: flex;
     justify-content: space-between;
-    margin-top: 10px;
     position: absolute;
-    bottom: 21%;
+    bottom: 23%;
 }
+
 
 /* botoes dentro da tag*/
 .btnShowList{
@@ -107,7 +112,9 @@ progress{
   }
 
 .btntools{
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
